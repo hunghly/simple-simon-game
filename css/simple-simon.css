@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Seymour+One&display=swap');
+
+:root {
+    --green-color: #00FF00;
+    /*--highlight-green-color: #00FF00;*/
+    --red-color: red;
+    /*--highlight-red-color: #8B0000;*/
+    --yellow-color: yellow;
+    /*--highlight-yellow-color: #FFD700;*/
+    --blue-color: blue;
+    /*--highlight-blue-color: #00CED1;*/
+    --main-font: 'Seymour One', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    margin: 1rem;
+}
+.header-title {
+    font-size: 2rem;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-font);
+    color: white;
+    letter-spacing: .3rem;
+    background-color: #333333;
+    height: 100vh;
+    width: auto;
+}
+.simon-game-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 24rem;
+}
+.simon-box {
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    border: .5rem solid #fff;
+    border-radius: 3rem;
+    transition: .3s all ease;
+}
+.simon-box:hover {
+    cursor: pointer;
+}
+.green-box {
+    background-color: var(--green-color);
+}
+.red-box {
+    background-color: var(--red-color);
+}
+.yellow-box {
+    background-color: var(--yellow-color);
+}
+.blue-box {
+    background-color: var(--blue-color);
+}
+.user-options {
+    margin: 1rem;
+    height: fit-content;
+}
+.start-btn {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    transition: .3s all ease;
+    outline: none;
+}
+.start-btn:hover {
+    background-color: var(--green-color);
+    cursor: pointer;
+}
